@@ -1,0 +1,31 @@
+@import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
+
+.login {
+  max-width: 500px;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__header {
+    @include font-h2;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  &__buttonContainer {
+    margin-top: auto;
+    height: 48px;
+    width: 100%;
+  }
+
+  &__error {
+    color: $red;
+    @include font-text-small;
+    align-self: center;
+  }
+}

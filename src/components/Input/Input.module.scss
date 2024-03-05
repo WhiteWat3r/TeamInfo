@@ -1,0 +1,48 @@
+@import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
+
+.input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__value {
+    @include font-text-small;
+    height: 48px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 8px;
+    padding: 0 16px;
+    background-color: $light-gray;
+    color: $gray;
+    border: none;
+    margin-top: 8px;
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__check {
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    top: 38px;
+
+    cursor: pointer;
+    color: $gray;
+  }
+
+  &__label {
+    @include font-text;
+  }
+
+  &__warning {
+    @include font-text-warning;
+    color: $red;
+    margin-top: 4px;
+  }
+}

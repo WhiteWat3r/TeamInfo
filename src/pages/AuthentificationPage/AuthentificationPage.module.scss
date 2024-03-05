@@ -1,0 +1,17 @@
+@import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonContainer {
+  width: 200px;
+  height: 40px;
+  @include font-text-small;
+  margin-top: 20px;
+}
