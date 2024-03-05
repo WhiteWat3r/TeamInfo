@@ -49,7 +49,7 @@ export const LoginForm = () => {
 
   return (
     <form className={style.login} onSubmit={handleSubmit(handleAuth)}>
-      <h2 className={style.login__header}>Регистрация</h2>
+      <h2 className={style.login__header}>Авторизация</h2>
       <Input
         id="email"
         validation={{
